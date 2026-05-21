@@ -1,0 +1,85 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Auditor-DSL",
+  "scopeName": "source.auditor",
+
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#percentual" },
+    { "include": "#numero" },
+    { "include": "#keywords_structure" },
+    { "include": "#keywords_action" },
+    { "include": "#keywords_logic" },
+    { "include": "#keywords_doctype" },
+    { "include": "#keywords_special" },
+    { "include": "#variables_nota" },
+    { "include": "#variables_item" },
+    { "include": "#operators" }
+  ],
+
+  "repository": {
+
+    "comments": {
+      "name": "comment.line.number-sign.auditor",
+      "match": "#.*$"
+    },
+
+    "strings": {
+      "name": "string.quoted.double.auditor",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": []
+    },
+
+    "percentual": {
+      "name": "constant.numeric.percentage.auditor",
+      "match": "\\b[0-9]+(\\.[0-9]+)?%"
+    },
+
+    "numero": {
+      "name": "constant.numeric.auditor",
+      "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+    },
+
+    "keywords_structure": {
+      "name": "keyword.control.auditor",
+      "match": "\\b(REGRA|ANALISAR|FILTRAR|ONDE|VALIDAR|QUE|AO_FALHAR)\\b"
+    },
+
+    "keywords_action": {
+      "name": "keyword.other.action.auditor",
+      "match": "\\b(ALERTA|REJEITAR)\\b"
+    },
+
+    "keywords_logic": {
+      "name": "keyword.operator.logical.auditor",
+      "match": "\\b(E|OU)\\b"
+    },
+
+    "keywords_doctype": {
+      "name": "support.type.auditor",
+      "match": "\\b(NFE|CTE|NOTA|ITEM)\\b"
+    },
+
+    "keywords_special": {
+      "name": "constant.language.auditor",
+      "match": "\\b(INTERESTADUAL|INTRAESTADUAL|TIPO_OPERACAO|CONTEM|INICIA_COM)\\b"
+    },
+
+    "variables_nota": {
+      "name": "variable.other.nota.auditor",
+      "match": "\\bNOTA_[A-Z0-9_]+"
+    },
+
+    "variables_item": {
+      "name": "variable.other.item.auditor",
+      "match": "\\bITEM_[A-Z0-9_]+"
+    },
+
+    "operators": {
+      "name": "keyword.operator.comparison.auditor",
+      "match": "(==|!=|>=|<=|>|<)"
+    }
+  }
+}

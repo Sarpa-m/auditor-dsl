@@ -1,0 +1,84 @@
+{
+  "Regra Completa": {
+    "prefix": "regra",
+    "body": [
+      "REGRA \"${1:Nome da regra}\"",
+      "ANALISAR ${2|NFE,CTE|}",
+      "FILTRAR ${3|NOTA,ITEM|} ONDE ${4:VARIAVEL} == \"${5:valor}\"",
+      "VALIDAR ${6|NOTA,ITEM|} QUE ${7:VARIAVEL} ${8|==,!=,>,<,>=,<=|} ${9:valor}",
+      "AO_FALHAR ${10|ALERTA,REJEITAR|} \"${11:Mensagem de erro}\""
+    ],
+    "description": "Cria uma regra Auditor-DSL completa"
+  },
+
+  "Regra de Nota": {
+    "prefix": "regra-nota",
+    "body": [
+      "REGRA \"${1:Nome da regra}\"",
+      "ANALISAR NFE",
+      "FILTRAR NOTA ONDE ${2:NOTA_UF_EMITENTE} == \"${3:SP}\"",
+      "VALIDAR NOTA QUE ${4:NOTA_VALOR_TOTAL} ${5|<=,>=,==,!=|} ${6:100000}",
+      "AO_FALHAR ${7|ALERTA,REJEITAR|} \"${8:Mensagem}\""
+    ],
+    "description": "Regra de validação no nível da nota fiscal"
+  },
+
+  "Regra de Item": {
+    "prefix": "regra-item",
+    "body": [
+      "REGRA \"${1:Nome da regra}\"",
+      "ANALISAR NFE",
+      "FILTRAR ITEM ONDE ${2:ITEM_CFOP} == \"${3:6102}\"",
+      "VALIDAR ITEM QUE ${4:ITEM_ALIQUOTA_ICMS} == ${5:12%}",
+      "AO_FALHAR ALERTA \"${6:Mensagem}\""
+    ],
+    "description": "Regra de validação no nível do item/produto"
+  },
+
+  "Regra Interestadual": {
+    "prefix": "regra-inter",
+    "body": [
+      "REGRA \"${1:Validacao Interestadual}\"",
+      "ANALISAR NFE",
+      "FILTRAR NOTA ONDE NOTA_UF_EMITENTE == \"${2:SP}\"",
+      "E TIPO_OPERACAO == INTERESTADUAL",
+      "FILTRAR ITEM ONDE ITEM_CFOP == \"${3:6102}\"",
+      "VALIDAR ITEM QUE ITEM_ALIQUOTA_ICMS == ${4:12%}",
+      "OU ITEM_ALIQUOTA_ICMS == ${5:7%}",
+      "AO_FALHAR ALERTA \"${6:Aliquota interestadual incorreta}\""
+    ],
+    "description": "Regra de validação de operação interestadual"
+  },
+
+  "Filtro de Nota": {
+    "prefix": "filtrar-nota",
+    "body": [
+      "FILTRAR NOTA ONDE ${1:NOTA_UF_EMITENTE} == \"${2:SP}\""
+    ],
+    "description": "Cláusula FILTRAR no nível da nota"
+  },
+
+  "Filtro de Item": {
+    "prefix": "filtrar-item",
+    "body": [
+      "FILTRAR ITEM ONDE ${1:ITEM_CFOP} == \"${2:6102}\""
+    ],
+    "description": "Cláusula FILTRAR no nível do item"
+  },
+
+  "Ao Falhar Alerta": {
+    "prefix": "alerta",
+    "body": [
+      "AO_FALHAR ALERTA \"${1:Mensagem de aviso}\""
+    ],
+    "description": "Ação de alerta (não rejeita a nota)"
+  },
+
+  "Ao Falhar Rejeitar": {
+    "prefix": "rejeitar",
+    "body": [
+      "AO_FALHAR REJEITAR \"${1:Mensagem de rejeição}\""
+    ],
+    "description": "Ação de rejeição (marca a nota como inválida)"
+  }
+}

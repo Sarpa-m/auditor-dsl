@@ -1,0 +1,49 @@
+{
+  "name": "auditor-dsl",
+  "displayName": "Auditor-DSL",
+  "description": "Suporte à linguagem Auditor-DSL para auditoria fiscal de NF-e/CT-e",
+  "version": "0.1.0",
+  "publisher": "fho-engcomp",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Programming Languages", "Snippets"],
+  "activationEvents": ["onLanguage:auditor"],
+  "main": "./out/extension.js",
+
+  "contributes": {
+
+    "languages": [
+      {
+        "id": "auditor",
+        "aliases": ["Auditor-DSL", "auditor"],
+        "extensions": [".auditor"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+
+    "grammars": [
+      {
+        "language": "auditor",
+        "scopeName": "source.auditor",
+        "path": "./syntaxes/auditor.tmLanguage.json"
+      }
+    ],
+
+    "snippets": [
+      {
+        "language": "auditor",
+        "path": "./snippets/auditor.json"
+      }
+    ]
+  },
+
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}
