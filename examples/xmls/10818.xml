@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+        <infNFe Id="NFe35250802921800000170550030000108181105542246" versao="4.00">
+            <ide>
+                <cUF>35</cUF>
+                <cNF>10554224</cNF>
+                <natOp>Devolucao de mercadorias</natOp>
+                <mod>55</mod>
+                <serie>3</serie>
+                <nNF>10818</nNF>
+                <dhEmi>2025-08-04T10:06:36-03:00</dhEmi>
+                <dhSaiEnt>2025-08-04T10:06:36-03:00</dhSaiEnt>
+                <tpNF>0</tpNF>
+                <idDest>1</idDest>
+                <cMunFG>3526704</cMunFG>
+                <tpImp>1</tpImp>
+                <tpEmis>1</tpEmis>
+                <cDV>6</cDV>
+                <tpAmb>1</tpAmb>
+                <finNFe>4</finNFe>
+                <indFinal>1</indFinal>
+                <indPres>2</indPres>
+                <indIntermed>1</indIntermed>
+                <procEmi>0</procEmi>
+                <verProc>mercadolivre.invoice</verProc>
+                <NFref>
+                    <refNFe>35250702921800000170550030000103701325430888</refNFe>
+                </NFref>
+            </ide>
+            <emit>
+                <CNPJ>02921800000170</CNPJ>
+                <xNome>BORLEME COMERCIAL LTDA</xNome>
+                <enderEmit>
+                    <xLgr>Rua Doutor Armando de Sales Oliveira</xLgr>
+                    <nro>1088</nro>
+                    <xCpl>Nao consta</xCpl>
+                    <xBairro>Centro</xBairro>
+                    <cMun>3526704</cMun>
+                    <xMun>Leme</xMun>
+                    <UF>SP</UF>
+                    <CEP>13610220</CEP>
+                    <cPais>1058</cPais>
+                    <xPais>Brasil</xPais>
+                    <fone>001935735100</fone>
+                </enderEmit>
+                <IE>415057600117</IE>
+                <CRT>3</CRT>
+            </emit>
+            <dest>
+                <CPF>01665699507</CPF>
+                <xNome>Luciana Oliveira Gasparotte</xNome>
+                <enderDest>
+                    <xLgr>Rua Manoel Cubero Alva</xLgr>
+                    <nro>155</nro>
+                    <xCpl>casa Referencia: proximo a igreja catolica.</xCpl>
+                    <xBairro>Cidade Nova</xBairro>
+                    <cMun>3525904</cMun>
+                    <xMun>Jundiai</xMun>
+                    <UF>SP</UF>
+                    <CEP>13219462</CEP>
+                    <cPais>1058</cPais>
+                    <xPais>Brasil</xPais>
+                </enderDest>
+                <indIEDest>9</indIEDest>
+            </dest>
+            <det nItem="1">
+                <prod>
+                    <cProd>24921</cProd>
+                    <cEAN>7898756900025</cEAN>
+                    <xProd>BOTA C/CURTO INNPRO CA 36025</xProd>
+                    <NCM>64019200</NCM>
+                    <CEST>2803800</CEST>
+                    <CFOP>1202</CFOP>
+                    <uCom>PARES</uCom>
+                    <qCom>1</qCom>
+                    <vUnCom>45.87000000</vUnCom>
+                    <vProd>45.87</vProd>
+                    <cEANTrib>7898756900025</cEANTrib>
+                    <uTrib>PARES</uTrib>
+                    <qTrib>1</qTrib>
+                    <vUnTrib>45.87000000</vUnTrib>
+                    <indTot>1</indTot>
+                </prod>
+                <imposto>
+                    <vTotTrib>0.00</vTotTrib>
+                    <ICMS>
+                        <ICMS00>
+                            <orig>0</orig>
+                            <CST>00</CST>
+                            <modBC>3</modBC>
+                            <vBC>45.87</vBC>
+                            <pICMS>18.0000</pICMS>
+                            <vICMS>8.26</vICMS>
+                        </ICMS00>
+                    </ICMS>
+                    <PIS>
+                        <PISOutr>
+                            <CST>50</CST>
+                            <vBC>45.87</vBC>
+                            <pPIS>1.6500</pPIS>
+                            <vPIS>0.76</vPIS>
+                        </PISOutr>
+                    </PIS>
+                    <COFINS>
+                        <COFINSOutr>
+                            <CST>50</CST>
+                            <vBC>45.87</vBC>
+                            <pCOFINS>7.6000</pCOFINS>
+                            <vCOFINS>3.49</vCOFINS>
+                        </COFINSOutr>
+                    </COFINS>
+                </imposto>
+                <impostoDevol>
+                    <pDevol>100.00</pDevol>
+                    <IPI>
+                        <vIPIDevol>0.00</vIPIDevol>
+                    </IPI>
+                </impostoDevol>
+                <infAdProd>xPed:2000012444225346 Devolucao do produto</infAdProd>
+            </det>
+            <total>
+                <ICMSTot>
+                    <vBC>45.87</vBC>
+                    <vICMS>8.26</vICMS>
+                    <vICMSDeson>0.00</vICMSDeson>
+                    <vFCP>0.00</vFCP>
+                    <vBCST>0.00</vBCST>
+                    <vST>0.00</vST>
+                    <vFCPST>0.00</vFCPST>
+                    <vFCPSTRet>0.00</vFCPSTRet>
+                    <vProd>45.87</vProd>
+                    <vFrete>0.00</vFrete>
+                    <vSeg>0.00</vSeg>
+                    <vDesc>0.00</vDesc>
+                    <vII>0.00</vII>
+                    <vIPI>0.00</vIPI>
+                    <vIPIDevol>0.00</vIPIDevol>
+                    <vPIS>0.76</vPIS>
+                    <vCOFINS>3.49</vCOFINS>
+                    <vOutro>0.00</vOutro>
+                    <vNF>45.87</vNF>
+                    <vTotTrib>0.00</vTotTrib>
+                </ICMSTot>
+            </total>
+            <transp>
+                <modFrete>0</modFrete>
+                <vol>
+                    <qVol>1</qVol>
+                    <pesoL>1.190</pesoL>
+                    <pesoB>1.190</pesoB>
+                </vol>
+            </transp>
+            <pag>
+                <detPag>
+                    <indPag>0</indPag>
+                    <tPag>90</tPag>
+                    <vPag>0.00</vPag>
+                </detPag>
+            </pag>
+            <infIntermed>
+                <CNPJ>03007331000141</CNPJ>
+                <idCadIntTran>268734188</idCadIntTran>
+            </infIntermed>
+            <infAdic>
+                <infCpl>Devolvido diretamente ao deposito temporario - operador logistico:
+                    EBAZAR.COM.BR LTDA, Cnpj: 03007331007901, Inscricao Estadual: 241174910115
+                    entrando ao endereco: Av. Dr. Antonio Joao Abdalla, Numero: 3333, Complemento: ,
+                    Bairro: Empresarial Colina, Cidade: Cajamar, Cep: 07750901, Estado: SP, Pais:
+                    BR. Devolucao ref. NF 35250702921800000170550030000103701325430888, emitida em
+                    28/07/2025, Valor do IPI R$0,00, ICMS ST R$0,00 e FCP R$0,00</infCpl>
+                <obsCont xCampo="external_id">
+                    <xTexto>DEVOLUTION-devolution-45276982113-1-OLSS-268734188</xTexto>
+                </obsCont>
+            </infAdic>
+        </infNFe>
+        <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <SignedInfo>
+                <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+                <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+                <Reference URI="#NFe35250802921800000170550030000108181105542246">
+                    <Transforms>
+                        <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                        <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+                    </Transforms>
+                    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+                    <DigestValue>4ucvJi4S36jARMhZKRXcURrK/W0=</DigestValue>
+                </Reference>
+            </SignedInfo>
+            <SignatureValue>
+                zUkPDTcle/W3qsTpen/GPnb/+1VaygYZ9ocT26tPzVkYMuKJyzU4nkuaVpQwjCurd02ZBno9LVFp59o/EEanXvaaRbngO+ppkPjAEHFkaKgT1WpBTJVJfdeeEPD4ACr23WZaz4xZkqRkXH24bsYxKDMcKj0LehGRZ2wGXwzLOTT2rM0r41T2X8ULZ8WM0KJ6r/cu+Pm86tyAw+oIXDfS1xN+tYNnq5DidJpbZWZStAbhG+GdGJKCEME/ZN9KfHN0oUmsu6VPCKW60zxGtoQszgAWdFzrUV+edT0yPtEm60WB9OGJv+qOdAHp6rPt6Npycfrh1TeEcMwJevp7XLRPIA==</SignatureValue>
+            <KeyInfo>
+                <X509Data>
+                    <X509Certificate>
+                        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</X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </Signature>
+    </NFe>
+    <protNFe versao="4.00">
+        <infProt>
+            <tpAmb>1</tpAmb>
+            <verAplic>SP_NFE_PL009_V4</verAplic>
+            <chNFe>35250802921800000170550030000108181105542246</chNFe>
+            <dhRecbto>2025-08-04T10:06:39-03:00</dhRecbto>
+            <nProt>135252179811215</nProt>
+            <digVal>4ucvJi4S36jARMhZKRXcURrK/W0=</digVal>
+            <cStat>100</cStat>
+            <xMotivo>Autorizado o uso da NF-e</xMotivo>
+        </infProt>
+    </protNFe>
+</nfeProc>

@@ -1,0 +1,5 @@
+REGRA "Nota acima de 100 mil reais"
+ANALISAR NFE
+FILTRAR NOTA ONDE NOTA_UF_EMITENTE == "SP"
+VALIDAR NOTA QUE NOTA_VALOR_TOTAL <= 100000
+AO_FALHAR REJEITAR "Nota acima de 100 mil exige revisao manual."

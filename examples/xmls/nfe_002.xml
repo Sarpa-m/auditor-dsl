@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe>
+    <infNFe>
+      <ide>
+        <nNF>1002</nNF>
+        <serie>1</serie>
+        <natOp>Venda de mercadoria</natOp>
+        <tpNF>1</tpNF>
+        <dhEmi>2024-01-16T14:00:00-03:00</dhEmi>
+      </ide>
+      <emit>
+        <CNPJ>12345678000195</CNPJ>
+        <enderEmit>
+          <UF>SP</UF>
+        </enderEmit>
+      </emit>
+      <dest>
+        <CNPJ>11122233000144</CNPJ>
+        <enderDest>
+          <UF>SP</UF>
+        </enderDest>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <CFOP>5102</CFOP>
+          <NCM>61091000</NCM>
+          <xProd>Camiseta algodao</xProd>
+          <qCom>100</qCom>
+          <vUnCom>50.00</vUnCom>
+          <vProd>5000.00</vProd>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS00>
+              <CST>000</CST>
+              <pICMS>12</pICMS>
+              <vICMS>600.00</vICMS>
+              <vBC>5000.00</vBC>
+            </ICMS00>
+          </ICMS>
+          <PIS>
+            <PISAliq>
+              <pPIS>0.65</pPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <pCOFINS>3.0</pCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+      </det>
+      <total>
+        <ICMSTot>
+          <vNF>150000.00</vNF>
+          <vICMS>600.00</vICMS>
+        </ICMSTot>
+      </total>
+      <infProt>
+        <nProt>135240000000002</nProt>
+      </infProt>
+    </infNFe>
+  </NFe>
+</nfeProc>
