@@ -61,7 +61,7 @@ O interpretador processa esse arquivo em quatro etapas:
 **Requisitos:** Python 3.11 ou superior
 
 ```bash
-git clone https://github.com/fho-engcomp/auditor-dsl.git
+git clone https://github.com/Sarpa-m/auditor-dsl.git
 cd auditor-dsl
 pip install -r requirements.txt
 ```
